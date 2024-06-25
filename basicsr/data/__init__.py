@@ -43,9 +43,10 @@ def create_dataset(dataset_opt):
             break
     if dataset_cls is None:
         raise ValueError(f'Dataset {dataset_type} is not found.')
-
+    
     dataset = dataset_cls(dataset_opt)
 
+    print(len(dataset))
     logger = get_root_logger()
     logger.info(
         f'Dataset {dataset.__class__.__name__} - {dataset_opt["name"]} '

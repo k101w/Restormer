@@ -8,8 +8,9 @@ from tqdm import tqdm
 from pdb import set_trace as stx
 
 
-src = 'Datasets/Downloads/SIDD'
-tar = 'Datasets/train/SIDD'
+src = "/opt/smarts/sta/Datasets/grey/DBS_Dataset"
+# src = "/opt/smarts/sta/Datasets/grey/denoise_sharp"
+tar = 'Datasets/train/Dataset_1_2'
 
 lr_tar = os.path.join(tar, 'input_crops')
 hr_tar = os.path.join(tar, 'target_crops')
@@ -17,18 +18,16 @@ hr_tar = os.path.join(tar, 'target_crops')
 os.makedirs(lr_tar, exist_ok=True)
 os.makedirs(hr_tar, exist_ok=True)
 
-files = natsorted(glob(os.path.join(src, '*', '*.PNG')))
-
+files = natsorted(glob(os.path.join(src, '*', '*','*.png')))
 lr_files, hr_files = [], []
 for file_ in files:
     filename = os.path.split(file_)[-1]
-    if 'GT' in filename:
+    if 'labels' in filename:
         hr_files.append(file_)
-    if 'NOISY' in filename:
+    else:
         lr_files.append(file_)
 
 files = [(i, j) for i, j in zip(lr_files, hr_files)]
-
 patch_size = 512
 overlap = 128
 p_max = 0
@@ -41,8 +40,8 @@ def save_files(file_):
     num_patch = 0
     w, h = lr_img.shape[:2]
     if w > p_max and h > p_max:
-        w1 = list(np.arange(0, w-patch_size, patch_size-overlap, dtype=np.int))
-        h1 = list(np.arange(0, h-patch_size, patch_size-overlap, dtype=np.int))
+        w1 = list(np.arange(0, w-patch_size, patch_size-overlap, dtype=np.int_))
+        h1 = list(np.arange(0, h-patch_size, patch_size-overlap, dtype=np.int_))
         w1.append(w-patch_size)
         h1.append(h-patch_size)
         for i in w1:
@@ -69,3 +68,5 @@ from joblib import Parallel, delayed
 import multiprocessing
 num_cores = 10
 Parallel(n_jobs=num_cores)(delayed(save_files)(file_) for file_ in tqdm(files))
+# for file_ in tqdm(files):
+#     save_files(file_)

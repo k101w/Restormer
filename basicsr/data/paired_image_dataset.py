@@ -1,17 +1,47 @@
+# from torch.utils import data as data
+# from torchvision.transforms.functional import normalize
+
+# from basicsr.data.data_util import (paired_paths_from_folder,
+#                                     paired_DP_paths_from_folder,
+#                                     paired_paths_from_lmdb,
+#                                     paired_paths_from_meta_info_file)
+# from basicsr.data.transforms import augment, paired_random_crop, paired_random_crop_DP, random_augmentation
+# from basicsr.utils import FileClient, imfrombytes, img2tensor, padding, padding_DP, imfrombytesDP
+
+# import random
+# import numpy as np
+# import torch
+# import cv2
 from torch.utils import data as data
 from torchvision.transforms.functional import normalize
 
 from basicsr.data.data_util import (paired_paths_from_folder,
-                                    paired_DP_paths_from_folder,
-                                    paired_paths_from_lmdb,
-                                    paired_paths_from_meta_info_file)
+paired_DP_paths_from_folder,
+paired_paths_from_lmdb,
+paired_paths_from_meta_info_file,
+paths_from_lmdb)
 from basicsr.data.transforms import augment, paired_random_crop, paired_random_crop_DP, random_augmentation
-from basicsr.utils import FileClient, imfrombytes, img2tensor, padding, padding_DP, imfrombytesDP
-
+from basicsr.utils import FileClient, imfrombytes, img2tensor, padding, padding_DP, imfrombytesDP,scandir
+from os import path as osp
 import random
 import numpy as np
 import torch
 import cv2
+import sys
+import pdb
+
+class ForkedPdb(pdb.Pdb):
+    """A Pdb subclass that may be used
+    from a forked multiprocessing child
+
+    """
+    def interaction(self, *args, **kwargs):
+        _stdin = sys.stdin
+        try:
+            sys.stdin = open('/dev/stdin')
+            pdb.Pdb.interaction(self, *args, **kwargs)
+        finally:
+            sys.stdin = _stdin
 
 class Dataset_PairedImage(data.Dataset):
     """Paired image dataset for image restoration.
@@ -71,7 +101,6 @@ class Dataset_PairedImage(data.Dataset):
             self.paths = paired_paths_from_folder(
                 [self.lq_folder, self.gt_folder], ['lq', 'gt'],
                 self.filename_tmpl)
-
         if self.opt['phase'] == 'train':
             self.geometric_augs = opt['geometric_augs']
 
@@ -190,8 +219,9 @@ class Dataset_GaussianDenoising(data.Dataset):
                              line.split(' ')[0]) for line in fin
                 ]
         else:
+            ForkedPdb().set_trace()
             self.paths = sorted(list(scandir(self.gt_folder, full_path=True)))
-
+        
         if self.opt['phase'] == 'train':
             self.geometric_augs = self.opt['geometric_augs']
 

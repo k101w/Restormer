@@ -3,8 +3,11 @@
 *.png
 *.tif
 *.jpg
+*.png
 *.pth
 *.mat
 *.npy
+*.state
+*.log
 .DS_Store
 

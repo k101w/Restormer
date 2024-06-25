@@ -1,3 +1,6 @@
+# import os
+
+# os.environ['CUDA_VISIBLE_DEVICES']='0,2,3'
 import argparse
 import datetime
 import logging
@@ -5,6 +8,7 @@ import math
 import random
 import time
 import torch
+
 from os import path as osp
 
 from basicsr.data import create_dataloader, create_dataset
@@ -29,7 +33,7 @@ def parse_options(is_train=True):
         choices=['none', 'pytorch', 'slurm'],
         default='none',
         help='job launcher')
-    parser.add_argument('--local_rank', type=int, default=0)
+    parser.add_argument('--local-rank', type=int, default=0)
     args = parser.parse_args()
     opt = parse(args.opt, is_train=is_train)
 

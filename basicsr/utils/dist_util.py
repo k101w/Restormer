@@ -1,11 +1,12 @@
 # Modified from https://github.com/open-mmlab/mmcv/blob/master/mmcv/runner/dist_utils.py  # noqa: E501
 import functools
 import os
+import datetime
 import subprocess
 import torch
 import torch.distributed as dist
 import torch.multiprocessing as mp
-
+import time
 
 def init_dist(launcher, backend='nccl', **kwargs):
     if mp.get_start_method(allow_none=True) is None:
@@ -22,7 +23,8 @@ def _init_dist_pytorch(backend, **kwargs):
     rank = int(os.environ['RANK'])
     num_gpus = torch.cuda.device_count()
     torch.cuda.set_device(rank % num_gpus)
-    dist.init_process_group(backend=backend, **kwargs)
+    dist.init_process_group(backend=backend, timeout=datetime.timedelta(seconds=3000),**kwargs)
+    #30000
 
 
 def _init_dist_slurm(backend, port=None):

@@ -1,0 +1,453 @@
+== This is the scripting step! ==
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch
+23742
+200
+23742
+200
+MI1-COMGA4001:2571139:2571139 [0] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2571139:2571139 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2571139:2571139 [0] NCCL INFO cudaDriverVersion 12000
+NCCL version 2.20.5+cuda12.4
+MI1-COMGA4001:2571142:2571142 [3] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2571142:2571142 [3] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2571142:2571142 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Using network IB
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Using network IB
+23742
+23742
+200
+200
+MI1-COMGA4001:2571141:2571141 [2] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2571141:2571141 [2] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2571141:2571141 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2571140:2571140 [1] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2571140:2571140 [1] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2571140:2571140 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Using network IB
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Using network IB
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO comm 0x97b6440 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x9a62b6ebd09e7ac8 - Init START
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO comm 0x8e89180 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x9a62b6ebd09e7ac8 - Init START
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO comm 0xa3168c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x9a62b6ebd09e7ac8 - Init START
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO comm 0x7d07530 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x9a62b6ebd09e7ac8 - Init START
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Setting affinity for GPU 3 to aaaa,aaaaaaaa
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO NVLS multicast support is not available on dev 3
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO NVLS multicast support is not available on dev 1
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Setting affinity for GPU 2 to aaaa,aaaaaaaa
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO NVLS multicast support is not available on dev 2
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO comm 0xa3168c0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO comm 0x7d07530 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO comm 0x97b6440 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO comm 0x8e89180 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Connected all rings
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Connected all rings
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Connected all rings
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Connected all rings
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO Connected all trees
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO Connected all trees
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO Connected all trees
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO Connected all trees
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2571141:2571450 [2] NCCL INFO comm 0x97b6440 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x9a62b6ebd09e7ac8 - Init COMPLETE
+MI1-COMGA4001:2571139:2571396 [0] NCCL INFO comm 0x7d07530 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x9a62b6ebd09e7ac8 - Init COMPLETE
+MI1-COMGA4001:2571140:2571451 [1] NCCL INFO comm 0x8e89180 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x9a62b6ebd09e7ac8 - Init COMPLETE
+MI1-COMGA4001:2571142:2571397 [3] NCCL INFO comm 0xa3168c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x9a62b6ebd09e7ac8 - Init COMPLETE
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a505c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_212000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a485c0>
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a585c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_212000.pth
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_212000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482741640>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_212000.pth
+MI1-COMGA4001:2571142:2571454 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+MI1-COMGA4001:2571139:2571460 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+MI1-COMGA4001:2571140:2571458 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+MI1-COMGA4001:2571142:2571161 [3] NCCL INFO comm 0xa3168c0 rank 3 nranks 4 cudaDev 3 busId e3000 - Abort COMPLETE
+MI1-COMGA4001:2571139:2571153 [0] NCCL INFO comm 0x7d07530 rank 0 nranks 4 cudaDev 0 busId 17000 - Abort COMPLETE
+MI1-COMGA4001:2571140:2571157 [1] NCCL INFO comm 0x8e89180 rank 1 nranks 4 cudaDev 1 busId 65000 - Abort COMPLETE
+failed and going to restart
+init dist ..  pytorch
+init dist ..  init dist .. pytorch
+ pytorch
+init dist ..  pytorch
+23742
+200
+23742
+200
+MI1-COMGA4001:2647050:2647050 [0] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2647050:2647050 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2647050:2647050 [0] NCCL INFO cudaDriverVersion 12000
+NCCL version 2.20.5+cuda12.4
+MI1-COMGA4001:2647051:2647051 [1] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2647051:2647051 [1] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2647051:2647051 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Using network IB
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Using network IB
+23742
+23742
+200
+200
+MI1-COMGA4001:2647053:2647053 [3] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2647053:2647053 [3] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2647053:2647053 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2647052:2647052 [2] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2647052:2647052 [2] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2647052:2647052 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Using network IB
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Using network IB
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO comm 0x97b5d40 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x2f381b1fcddaeab1 - Init START
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO comm 0x9123ec0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x2f381b1fcddaeab1 - Init START
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO comm 0x7a3df10 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x2f381b1fcddaeab1 - Init START
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO comm 0x97ac040 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x2f381b1fcddaeab1 - Init START
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Setting affinity for GPU 3 to aaaa,aaaaaaaa
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO NVLS multicast support is not available on dev 3
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Setting affinity for GPU 2 to aaaa,aaaaaaaa
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO NVLS multicast support is not available on dev 2
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO NVLS multicast support is not available on dev 1
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO comm 0x7a3df10 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO comm 0x9123ec0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO comm 0x97b5d40 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO comm 0x97ac040 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Connected all rings
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Connected all rings
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Connected all rings
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Connected all rings
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO Connected all trees
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO Connected all trees
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO Connected all trees
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO Connected all trees
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2647051:2647347 [1] NCCL INFO comm 0x97ac040 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x2f381b1fcddaeab1 - Init COMPLETE
+MI1-COMGA4001:2647053:2647352 [3] NCCL INFO comm 0x9123ec0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x2f381b1fcddaeab1 - Init COMPLETE
+MI1-COMGA4001:2647052:2647353 [2] NCCL INFO comm 0x97b5d40 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x2f381b1fcddaeab1 - Init COMPLETE
+MI1-COMGA4001:2647050:2647346 [0] NCCL INFO comm 0x7a3df10 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x2f381b1fcddaeab1 - Init COMPLETE
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a445c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a445c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482741640>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a505c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+MI1-COMGA4001:2647051:2647360 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+MI1-COMGA4001:2647053:2647358 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+MI1-COMGA4001:2647052:2647356 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+MI1-COMGA4001:2647051:2647072 [1] NCCL INFO comm 0x97ac040 rank 1 nranks 4 cudaDev 1 busId 65000 - Abort COMPLETE
+MI1-COMGA4001:2647053:2647070 [3] NCCL INFO comm 0x9123ec0 rank 3 nranks 4 cudaDev 3 busId e3000 - Abort COMPLETE
+MI1-COMGA4001:2647052:2647068 [2] NCCL INFO comm 0x97b5d40 rank 2 nranks 4 cudaDev 2 busId ca000 - Abort COMPLETE
+failed and going to restart
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch
+23742
+200
+23742
+200
+MI1-COMGA4001:2668166:2668166 [0] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2668166:2668166 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2668166:2668166 [0] NCCL INFO cudaDriverVersion 12000
+NCCL version 2.20.5+cuda12.4
+MI1-COMGA4001:2668169:2668169 [3] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2668169:2668169 [3] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2668169:2668169 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Using network IB
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Using network IB
+23742
+23742
+200
+200
+MI1-COMGA4001:2668168:2668168 [2] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2668167:2668167 [1] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2668168:2668168 [2] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2668167:2668167 [1] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2668168:2668168 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2668167:2668167 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Using network IB
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Using network IB
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO comm 0x89db980 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x1e1c2b19f9f35636 - Init START
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO comm 0x8e8e640 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x1e1c2b19f9f35636 - Init START
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO comm 0x8e142c0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x1e1c2b19f9f35636 - Init START
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO comm 0x978a380 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x1e1c2b19f9f35636 - Init START
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Setting affinity for GPU 3 to aaaa,aaaaaaaa
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO NVLS multicast support is not available on dev 3
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO NVLS multicast support is not available on dev 1
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Setting affinity for GPU 2 to aaaa,aaaaaaaa
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO NVLS multicast support is not available on dev 2
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO comm 0x978a380 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO comm 0x89db980 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO comm 0x8e142c0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO comm 0x8e8e640 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Connected all rings
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Connected all rings
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Connected all rings
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Connected all rings
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO Connected all trees
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO Connected all trees
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO Connected all trees
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO Connected all trees
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2668168:2668470 [2] NCCL INFO comm 0x89db980 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x1e1c2b19f9f35636 - Init COMPLETE
+MI1-COMGA4001:2668166:2668460 [0] NCCL INFO comm 0x8e142c0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x1e1c2b19f9f35636 - Init COMPLETE
+MI1-COMGA4001:2668167:2668471 [1] NCCL INFO comm 0x8e8e640 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x1e1c2b19f9f35636 - Init COMPLETE
+MI1-COMGA4001:2668169:2668461 [3] NCCL INFO comm 0x978a380 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x1e1c2b19f9f35636 - Init COMPLETE
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a505c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482749640>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a4c5c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a485c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+MI1-COMGA4001:2668167:2668476 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+MI1-COMGA4001:2668169:2668474 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+MI1-COMGA4001:2668168:2668478 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+MI1-COMGA4001:2668168:2668190 [2] NCCL INFO comm 0x89db980 rank 2 nranks 4 cudaDev 2 busId ca000 - Abort COMPLETE
+MI1-COMGA4001:2668169:2668184 [3] NCCL INFO comm 0x978a380 rank 3 nranks 4 cudaDev 3 busId e3000 - Abort COMPLETE
+MI1-COMGA4001:2668167:2668186 [1] NCCL INFO comm 0x8e8e640 rank 1 nranks 4 cudaDev 1 busId 65000 - Abort COMPLETE
+failed and going to restart
+init dist ..  pytorch
+init dist ..  pytorchinit dist .. init dist ..  
+ pytorchpytorch
+
+23742
+200
+23742
+200
+MI1-COMGA4001:2689414:2689414 [0] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2689414:2689414 [0] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2689414:2689414 [0] NCCL INFO cudaDriverVersion 12000
+NCCL version 2.20.5+cuda12.4
+MI1-COMGA4001:2689417:2689417 [3] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2689417:2689417 [3] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2689417:2689417 [3] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Using network IB
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Using network IB
+23742
+23742
+200
+200
+MI1-COMGA4001:2689415:2689415 [1] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2689416:2689416 [2] NCCL INFO cudaDriverVersion 12000
+MI1-COMGA4001:2689415:2689415 [1] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2689416:2689416 [2] NCCL INFO Bootstrap : Using ib0:172.16.8.43<0>
+MI1-COMGA4001:2689415:2689415 [1] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2689416:2689416 [2] NCCL INFO NET/Plugin : dlerror=libnccl-net.so: cannot open shared object file: No such file or directory No plugin found (libnccl-net.so), using internal implementation
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Using network IB
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [RO]; OOB ib0:172.16.8.43<0>
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Using non-device net plugin version 0
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Using network IB
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO comm 0x97aa140 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x207426d08277caa9 - Init START
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO comm 0x8e88d40 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x207426d08277caa9 - Init START
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO comm 0x93f41c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x207426d08277caa9 - Init START
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO comm 0x7f1fbc0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x207426d08277caa9 - Init START
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Setting affinity for GPU 0 to 5555,55555555
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO NVLS multicast support is not available on dev 0
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Setting affinity for GPU 2 to aaaa,aaaaaaaa
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO NVLS multicast support is not available on dev 2
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Setting affinity for GPU 3 to aaaa,aaaaaaaa
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO NVLS multicast support is not available on dev 3
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Setting affinity for GPU 1 to 5555,55555555
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO NVLS multicast support is not available on dev 1
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO comm 0x7f1fbc0 rank 0 nRanks 4 nNodes 1 localRanks 4 localRank 0 MNNVL 0
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO comm 0x8e88d40 rank 1 nRanks 4 nNodes 1 localRanks 4 localRank 1 MNNVL 0
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO comm 0x93f41c0 rank 3 nRanks 4 nNodes 1 localRanks 4 localRank 3 MNNVL 0
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO comm 0x97aa140 rank 2 nRanks 4 nNodes 1 localRanks 4 localRank 2 MNNVL 0
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] 2/-1/-1->1->0
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/-1/-1->2->1
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO P2P Chunksize set to 131072
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Channel 00 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Channel 01 : 1[1] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Channel 00 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Channel 00 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Channel 01 : 2[2] -> 3[3] via SHM/direct/direct
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Channel 00 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Channel 01 : 3[3] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Channel 01 : 0[0] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Connected all rings
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Connected all rings
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Connected all rings
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Connected all rings
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Channel 00 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Channel 01 : 3[3] -> 2[2] via SHM/direct/direct
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Channel 00 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Channel 01 : 2[2] -> 1[1] via SHM/direct/direct
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Channel 00 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Channel 01 : 1[1] -> 0[0] via SHM/direct/direct
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO Connected all trees
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO Connected all trees
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO Connected all trees
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO Connected all trees
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO 2 coll channels, 0 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+MI1-COMGA4001:2689416:2689714 [2] NCCL INFO comm 0x97aa140 rank 2 nranks 4 cudaDev 2 nvmlDev 2 busId ca000 commId 0x207426d08277caa9 - Init COMPLETE
+MI1-COMGA4001:2689414:2689709 [0] NCCL INFO comm 0x7f1fbc0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 17000 commId 0x207426d08277caa9 - Init COMPLETE
+MI1-COMGA4001:2689415:2689713 [1] NCCL INFO comm 0x8e88d40 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 65000 commId 0x207426d08277caa9 - Init COMPLETE
+MI1-COMGA4001:2689417:2689710 [3] NCCL INFO comm 0x93f41c0 rank 3 nranks 4 cudaDev 3 nvmlDev 3 busId e3000 commId 0x207426d08277caa9 - Init COMPLETE
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a4c5c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a545c0>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482a545c0>
+ load net keys <built-in method keys of collections.OrderedDict object at 0x155482745640>
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+load pretrained model /data/interns/kewenwu/Restormer/experiments/RealDenoising_Restormer/models/net_g_216000.pth
+MI1-COMGA4001:2689415:2689718 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+MI1-COMGA4001:2689416:2689722 [2] NCCL INFO [Service thread] Connection closed by localRank 2
+MI1-COMGA4001:2689417:2689720 [3] NCCL INFO [Service thread] Connection closed by localRank 3
+MI1-COMGA4001:2689417:2689434 [3] NCCL INFO comm 0x93f41c0 rank 3 nranks 4 cudaDev 3 busId e3000 - Abort COMPLETE
+MI1-COMGA4001:2689416:2689436 [2] NCCL INFO comm 0x97aa140 rank 2 nranks 4 cudaDev 2 busId ca000 - Abort COMPLETE
+MI1-COMGA4001:2689415:2689432 [1] NCCL INFO comm 0x8e88d40 rank 1 nranks 4 cudaDev 1 busId 65000 - Abort COMPLETE
+failed and going to restart
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch
+init dist ..  pytorch

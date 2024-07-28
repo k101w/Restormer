@@ -10,4 +10,6 @@
 *.state
 *.log
 .DS_Store
+experiments
+experiments_old
 

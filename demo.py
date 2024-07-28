@@ -23,9 +23,12 @@ import argparse
 from pdb import set_trace as stx
 import numpy as np
 
+from datetime import timedelta
+import time
+
 parser = argparse.ArgumentParser(description='Test Restormer on your own images')
-parser.add_argument('--input_dir', default='./demo/degraded/', type=str, help='Directory of input images or path of single image')
-parser.add_argument('--result_dir', default='./demo/restored/', type=str, help='Directory for restored results')
+parser.add_argument('--input_dir', default='Denoising/Datasets/test/', type=str, help='Directory of input images or path of single image')
+parser.add_argument('--result_dir', default='./demo/restored/golden', type=str, help='Directory for restored results')
 parser.add_argument('--task', required=True, type=str, help='Task to run', choices=['Motion_Deblurring',
                                                                                     'Single_Image_Defocus_Deblurring',
                                                                                     'Deraining',
@@ -57,7 +60,7 @@ def get_weights_and_parameters(task, parameters):
     elif task == 'Deraining':
         weights = os.path.join('Deraining', 'pretrained_models', 'deraining.pth')
     elif task == 'Real_Denoising':
-        weights = os.path.join('Denoising', 'pretrained_models', 'real_denoising.pth')
+        weights = os.path.join('Denoising', 'pretrained_models', 'net_g_68000.pth')
         parameters['LayerNorm_type'] =  'BiasFree'
     elif task == 'Gaussian_Color_Denoising':
         weights = os.path.join('Denoising', 'pretrained_models', 'gaussian_color_denoising_blind.pth')
@@ -125,7 +128,7 @@ with torch.no_grad():
         padh = H-height if height%img_multiple_of!=0 else 0
         padw = W-width if width%img_multiple_of!=0 else 0
         input_ = F.pad(input_, (0,padw,0,padh), 'reflect')
-
+        starttime = time.perf_counter()
         if args.tile is None:
             ## Testing on the original resolution image
             restored = model(input_)
@@ -159,7 +162,8 @@ with torch.no_grad():
 
         restored = restored.permute(0, 2, 3, 1).cpu().detach().numpy()
         restored = img_as_ubyte(restored[0])
-
+        duration = timedelta(seconds=time.perf_counter()-starttime)
+        print('Job took: ', duration)
         f = os.path.splitext(os.path.split(file_)[-1])[0]
         # stx()
         if task == 'Gaussian_Gray_Denoising':

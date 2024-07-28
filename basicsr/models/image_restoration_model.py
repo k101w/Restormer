@@ -71,7 +71,7 @@ class ImageCleanModel(BaseModel):
         if load_path is not None:
             self.load_network(self.net_g, load_path,
                               self.opt['path'].get('strict_load_g', True), param_key=self.opt['path'].get('param_key', 'params'))
-
+            print(f'load pretrained model {load_path}')
         if self.is_train:
             self.init_training_settings()
 

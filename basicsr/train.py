@@ -9,6 +9,8 @@ import random
 import time
 import torch
 
+# torch.distributed.init_process_group(init_method=None, timeout=datetime.timedelta(seconds=3000), world_size=- 1, rank=- 1, store=None, group_name='', pg_options=None)
+
 from os import path as osp
 
 from basicsr.data import create_dataloader, create_dataset
@@ -176,6 +178,7 @@ def main():
     train_loader, train_sampler, val_loader, total_epochs, total_iters = result
 
     # create model
+    # print(f'resume:{resume_state}')
     if resume_state:  # resume training
         check_resume(opt, resume_state['iter'])
         model = create_model(opt)
@@ -184,6 +187,7 @@ def main():
                     f"iter: {resume_state['iter']}.")
         start_epoch = resume_state['epoch']
         current_iter = resume_state['iter']
+
     else:
         model = create_model(opt)
         start_epoch = 0
